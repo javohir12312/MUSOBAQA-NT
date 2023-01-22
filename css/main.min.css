@@ -408,8 +408,11 @@ img {
 .header {
   width: 100%;
   position: absolute;
+<<<<<<< HEAD
   z-index: 12;
   background: rgba(0, 0, 0, 0.2);
+=======
+>>>>>>> f792b9a7de2dc5851de7c1d2443532b33731a746
 }
 .header__navbar {
   max-width: 1280px;
@@ -516,7 +519,10 @@ img {
 @media (max-width: 1024px) {
   .header {
     width: 100%;
+<<<<<<< HEAD
     position: fixed;
+=======
+>>>>>>> f792b9a7de2dc5851de7c1d2443532b33731a746
   }
   .header__navbar {
     max-width: 944px;
@@ -624,7 +630,10 @@ img {
 @media (max-width: 576px) {
   .header {
     width: 100%;
+<<<<<<< HEAD
     position: fixed;
+=======
+>>>>>>> f792b9a7de2dc5851de7c1d2443532b33731a746
   }
   .header__navbar {
     max-width: 944px;
@@ -2215,7 +2224,7 @@ img {
     flex-direction: column;
     row-gap: 20px;
     padding: 0;
-    margin-top: 200px;
+    margin-top: 110px;
   }
   .modal-menu__content-item-link {
     font-family: "Open Sans";
