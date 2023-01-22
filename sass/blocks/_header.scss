@@ -1,0 +1,342 @@
+.header {
+  width: 100%;
+  position: fixed;
+  &__navbar {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 26px;
+    align-items: center;
+    &-inner {
+      max-width: 1087px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      &-list {
+        max-width: 606px;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        &-items {
+          position: relative;
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -5px;
+            transition: width 0.5s linear;
+            width: 0%;
+            height: 3px;
+            background: #fff;
+          }
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+          }
+          &-link {
+            font-family: "Playfair Display";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 132.9%;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-decoration: none;
+            &:hover {
+              color: springgreen;
+            }
+          }
+        }
+      }
+    }
+    &-toggle {
+      width: 31px;
+      height: 24px;
+      border: none;
+      background: none;
+      background-image: url("../../image/header/hamburger.svg");
+      background-position: center;
+      background-size: cover;
+      display: none;
+    }
+    &-order {
+      max-width: 196px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &-btns {
+        &:nth-child(1) {
+          width: 27px;
+          height: 27px;
+          display: block;
+          border: none;
+          background: none;
+          background-image: url("../../image/header/search.svg");
+          background-size: cover;
+          background-position: center;
+          cursor: pointer;
+        }
+        &:nth-child(2) {
+          width: 27px;
+          height: 27px;
+          display: block;
+          border: none;
+          background: none;
+          background-size: cover;
+          background-image: url("../../image/header/order.svg");
+          background-position: center;
+          cursor: pointer;
+        }
+        &:nth-child(3) {
+          width: 27px;
+          height: 27px;
+          display: block;
+          border: none;
+          background: none;
+          background-image: url("../../image/header/user.svg");
+          background-size: cover;
+          background-position: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    width: 100%;
+    position: fixed;
+    background: gray;
+    &__navbar {
+      max-width: 944px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 26px;
+      align-items: center;
+      &-toggle {
+        width: 31px;
+        height: 24px;
+        border: none;
+        background: none;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../../image/header/hamburger.svg");
+        background-position: center;
+        background-size: cover;
+        display: block;
+      }
+      &-inner {
+        width: 100%;
+        margin-right: 10px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        &-list {
+          max-width: 606px;
+          width: 100%;
+          list-style: none;
+          display: none;
+          justify-content: space-between;
+          &-items {
+            position: relative;
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              bottom: -5px;
+              transition: width 0.5s linear;
+              width: 0%;
+              height: 3px;
+              background: #fff;
+            }
+            &:hover {
+              &::before {
+                width: 100%;
+              }
+            }
+            &-link {
+              font-family: "Playfair Display";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 132.9%;
+              letter-spacing: 0.05em;
+              color: #ffffff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      &-order {
+        max-width: 196px;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        &-btns {
+          &:nth-child(1) {
+            width: 27px;
+            height: 27px;
+            display: block;
+            border: none;
+            background: none;
+            background-image: url("../../image/header/search.svg");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+          }
+          &:nth-child(2) {
+            width: 27px;
+            height: 27px;
+            display: block;
+            border: none;
+            background: none;
+            background-size: cover;
+            background-image: url("../../image/header/order.svg");
+            background-position: center;
+            cursor: pointer;
+          }
+          &:nth-child(3) {
+            width: 27px;
+            height: 27px;
+            display: block;
+            border: none;
+            background: none;
+            background-image: url("../../image/header/user.svg");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    width: 100%;
+    position: fixed;
+    background: gray;
+    &__navbar {
+      max-width: 944px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 26px;
+      align-items: center;
+      &-toggle {
+        width: 31px;
+        height: 24px;
+        border: none;
+        background: none;
+        margin-right: auto;
+        margin-left: 0;
+        background-image: url("../../image/header/hamburger.svg");
+        background-position: center;
+        background-size: cover;
+        display: block;
+      }
+      &-inner {
+        width: 100%;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        &-logo {
+          margin-right: auto;
+          margin-left: auto;
+          & > svg {
+            width: 104px;
+            height: 36px;
+          }
+        }
+        &-list {
+          max-width: 606px;
+          width: 100%;
+          list-style: none;
+          display: none;
+          justify-content: space-between;
+          &-items {
+            position: relative;
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              bottom: -5px;
+              transition: width 0.5s linear;
+              width: 0%;
+              height: 3px;
+              background: #fff;
+            }
+            &:hover {
+              &::before {
+                width: 100%;
+              }
+            }
+            &-link {
+              font-family: "Playfair Display";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 132.9%;
+              letter-spacing: 0.05em;
+              color: #ffffff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      &-order {
+        max-width: 115px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &-btns {
+          &:nth-child(1) {
+            width: 21px;
+            height: 21px;
+            display: block;
+            border: none;
+            background: none;
+            background-image: url("../../image/header/search.svg");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+          }
+          &:nth-child(2) {
+            width: 21px;
+            height: 21px;
+            display: block;
+            border: none;
+            background: none;
+            background-size: cover;
+            background-image: url("../../image/header/order.svg");
+            background-position: center;
+            cursor: pointer;
+          }
+          &:nth-child(3) {
+            width: 21px;
+            height: 21px;
+            display: block;
+            border: none;
+            background: none;
+            background-image: url("../../image/header/user.svg");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
