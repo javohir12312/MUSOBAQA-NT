@@ -759,6 +759,11 @@ img {
 .hero .hero__inner {
   max-width: 700px;
 }
+@media screen and (max-width: 850px) {
+  .hero .hero__inner {
+    margin-top: 30px;
+  }
+}
 .hero .hero__inner h2 {
   width: 688px;
   font-family: "Playfair Display";
