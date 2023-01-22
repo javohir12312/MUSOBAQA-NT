@@ -406,7 +406,7 @@ img {
 
 .header {
   width: 100%;
-  position: fixed;
+  position: absolute;
 }
 .header__navbar {
   max-width: 1280px;
@@ -514,7 +514,6 @@ img {
   .header {
     width: 100%;
     position: fixed;
-    background: gray;
   }
   .header__navbar {
     max-width: 944px;
@@ -623,7 +622,6 @@ img {
   .header {
     width: 100%;
     position: fixed;
-    background: gray;
   }
   .header__navbar {
     max-width: 944px;
@@ -758,6 +756,11 @@ img {
 }
 .hero .hero__inner {
   max-width: 700px;
+}
+@media screen and (max-width: 850px) {
+  .hero .hero__inner {
+    margin-top: 20px;
+  }
 }
 .hero .hero__inner h2 {
   width: 688px;
@@ -907,6 +910,16 @@ img {
   text-align: center;
   color: #07484A;
 }
+@media screen and (max-width: 850px) {
+  .explore__inner h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .explore__inner h2 {
+    font-size: 25px;
+  }
+}
 
 .explore__cards ul {
   width: 240px;
@@ -969,6 +982,16 @@ img {
   line-height: 28px;
   color: #07484A;
   margin-left: 0;
+}
+@media screen and (max-width: 850px) {
+  .explore__cards ul li p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .explore__cards ul li p {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 500px) {
   .explore__cards ul li {
