@@ -7,6 +7,14 @@
         line-height: 85px;
         text-align: center;
         color: #07484A;
+
+        @media screen and (max-width: 850px) {
+            font-size: 35px;
+        }
+
+        @media screen and (max-width: 850px) {
+            font-size: 25px;
+        }
     }
 }
 
@@ -75,6 +83,14 @@
                 line-height: 28px;
                 color: #07484A;
                 margin-left: 0;
+
+                @media screen and (max-width: 850px) {
+                    font-size: 18px;
+                }
+        
+                @media screen and (max-width: 850px) {
+                    font-size: 15px;
+                }
             }
 
             @media screen and (max-width:500px) {
