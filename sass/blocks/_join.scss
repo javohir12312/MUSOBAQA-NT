@@ -1,0 +1,121 @@
+.join {
+}
+
+.join__box {
+  display: flex;
+  width: 100%;
+}
+
+.join__img {
+  width: 50%;
+  height: 600px;
+}
+
+.join__right {
+  width: 50%;
+  padding: 83px 0 83px 150px;
+  background-color: #e0f6f1;
+}
+
+.join__title {
+  margin: 0 0 25px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  color: #07484a;
+  strong {
+    display: block;
+  }
+}
+
+.join__text {
+  margin: 0 0 41px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #07484a;
+}
+
+.join__email {
+  display: block;
+  width: 100%;
+  max-width: 525px;
+  margin-bottom: 41px;
+  padding: 16px 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  &::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #c4c4c4;
+  }
+}
+
+.join__btn {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  padding: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FDFBF8;
+  background-color: #70908B;
+  border: none;
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 1422px) {
+  .join__right {
+    padding: 109px 40px;
+  }
+  .join__title {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .join__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+@media only screen and (max-width: 988px) {
+  .join__box {
+    flex-direction: column;
+  }
+  .join__img, .join__right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .join__right {
+    padding: 48px 16px;
+    text-align: center;
+  }
+  .join__title {
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .join__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .join__email::placeholder {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .join__box {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
