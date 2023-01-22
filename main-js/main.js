@@ -46,3 +46,45 @@ function findElement(element) {
     modalMenu.classList.add("modal-inactive");
   };
   
+
+  // slider////////////////////////////////////
+
+const leftBtn = document.querySelector(
+    ".our__left"
+  );
+  
+  const rightBtn = document.querySelector(
+    ".our__right"
+  );
+  const sliderItems = document.querySelector(".our__list");
+  const slider = document.querySelector(".our__item");
+  const arr = Array.from(sliderItems);
+  let num = arr.length
+  function setTransform() {
+    arr.forEach((item, index) => {
+      console.log(item)
+      item.style.left = `${index * 28}%`;
+    });
+  }
+  setTransform();
+  let counter = 0;
+  function slidesFunc() {
+    arr.forEach((item) => {
+      item.style.transform = translateX(`-${counter * 100}%`);
+    });
+  }
+  
+  leftBtn.onclick = function () {
+    counter > 0 ? (counter -= 1) : counter;
+    if (counter >= 0) {
+      slidesFunc();
+    }
+  };
+  rightBtn.onclick = function () {
+    counter++;
+    if (counter < num) {
+      slidesFunc();
+    } else {
+      counter = num - 1;
+    }
+  };

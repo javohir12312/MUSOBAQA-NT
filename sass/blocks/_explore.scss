@@ -1,5 +1,4 @@
 .explore__inner {
-    padding-left: 150px;
     h2 {
         font-family: 'Playfair Display';
         font-style: normal;
@@ -38,9 +37,10 @@
             width: 100%;
             gap: 10px;
 
-            li{
+            li {
                 width: 100px;
-                p{
+
+                p {
                     text-align: center;
                 }
             }
@@ -62,7 +62,7 @@
             text-align: left;
             cursor: pointer;
 
-            p{
+            p {
                 transition: 0.3s;
             }
 
@@ -70,12 +70,14 @@
                 width: 150px;
                 text-align: center;
                 margin: 0 auto;
-                &:hover{
-                    p{
+
+                &:hover {
+                    p {
                         box-shadow: 0px 3px 1px 0px #07484A;
                     }
                 }
             }
+
             p {
                 font-family: 'Roboto';
                 font-style: normal;
@@ -88,7 +90,7 @@
                 @media screen and (max-width: 850px) {
                     font-size: 18px;
                 }
-        
+
                 @media screen and (max-width: 850px) {
                     font-size: 15px;
                 }
@@ -100,16 +102,18 @@
                 width: 200px;
                 margin-top: 10px;
                 border-radius: 12px;
-                p{
+
+                p {
                     padding: 2px 10px;
                     color: #F5F5F5;
                 }
-                &:hover{
-                    p{
+
+                &:hover {
+                    p {
                         box-shadow: none;
                     }
                 }
-        }
+            }
         }
     }
 }
@@ -172,7 +176,7 @@
 
 
     li {
-       max-width: 650px;
+        max-width: 650px;
         overflow: hidden;
         position: relative;
 
@@ -225,14 +229,26 @@
                 top: 65%;
                 left: 50%;
                 transform: translateX(-50%);
+
+                @media screen and (max-width:600px) {
+                    font-size: 14px;
+                    border-radius: 12px;
+                    padding: 0;
+                    width: 80px;
+                }
             }
 
             h3 {
                 text-align: center;
                 top: 25%;
                 left: 50%;
-                margin: 0 ;
+                margin: 0;
                 transform: translateX(-80%);
+
+                @media screen and (max-width:600px) {
+                    font-size: 18px;
+                    transform: translateX(-50%);
+                }
             }
         }
     }
