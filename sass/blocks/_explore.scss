@@ -1,0 +1,222 @@
+.explore__inner {
+    h2 {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 85px;
+        text-align: center;
+        color: #07484A;
+    }
+}
+
+.explore__cards {
+    ul {
+        width: 240px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 700px;
+        overflow-y: scroll;
+
+        @media screen and (max-width:850px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            overflow: hidden;
+            height: auto;
+            width: 100%;
+            gap: 10px;
+
+            li{
+                width: 100px;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 2px;
+            background: #07484A;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            width: 15px;
+            display: block;
+            background: #62bdc0;
+        }
+
+        li {
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+
+            p{
+                transition: 0.3s;
+            }
+
+            @media screen and (max-width:850px) {
+                width: 150px;
+                text-align: center;
+                margin: 0 auto;
+                &:hover{
+                    p{
+                        box-shadow: 0px 3px 1px 0px #07484A;
+                    }
+                }
+            }
+            p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 28px;
+                color: #07484A;
+                margin-left: 0;
+            }
+
+            @media screen and (max-width:500px) {
+                background: gray;
+                padding: 0;
+                width: 200px;
+                margin-top: 10px;
+                border-radius: 12px;
+                p{
+                    padding: 2px 10px;
+                    color: #F5F5F5;
+                }
+                &:hover{
+                    p{
+                        box-shadow: none;
+                    }
+                }
+        }
+        }
+    }
+}
+
+.explore__search {
+    width: 220px;
+    padding: 5px 10px;
+    border: 1.5px solid #07484A;
+    border-radius: 4px;
+
+    @media screen and (max-width:850px) {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.explore__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    padding: 5px 20px;
+    background: #70908B;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-top: 20px;
+
+    img {
+        width: 15px;
+    }
+}
+
+.explore__allcards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    @media screen and (max-width:850px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.explore__card {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+
+    li {
+       max-width: 650px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            background: none;
+            z-index: 0;
+        }
+
+        h3 {
+            position: absolute;
+            width: 150px;
+            top: -100%;
+            left: 50%;
+            text-align: center;
+            transition: 0.5s;
+            transform: translateX(-80%);
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 85px;
+            color: #FDFBF8;
+        }
+
+        button {
+            width: 150px;
+            top: -100%;
+            left: 50%;
+            transition: 0.5s;
+            transform: translateX(-50%);
+            position: absolute;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #07484A;
+            background: #E0EFF6;
+            padding: 10px 20px;
+            border: none;
+
+        }
+
+        &:hover {
+            button {
+                top: 65%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            h3 {
+                text-align: center;
+                top: 25%;
+                left: 50%;
+                margin: 0 ;
+                transform: translateX(-80%);
+            }
+        }
+    }
+}
