@@ -10,8 +10,29 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body>
-  <div class="outer-wrapper">
+<body >
+  <div id="body" class="outer-wrapper">
+
+    <div class="modal">
+      <div class="modal__title">
+        <h3>
+          Registraton
+        </h3>
+
+        <button class="btn__modal__close">
+          <img src="./image/x_vector.svg" alt="xbutton">
+        </button>
+      </div>
+
+      <form action="https://echo.htmlacademy.ru/" method="post" class="modal__form">
+        <input type="text"  name="username" placeholder="user name">
+        <input type="password" name="userpassword"  placeholder="Password">
+        <button>
+          Log in
+        </button>
+      </form>
+      
+    </div>
 
     <header class="header">
       <div class="container">
@@ -53,7 +74,7 @@
           <div class="header__navbar-order">
             <button class="header__navbar-order-btns"></button>
             <button class="header__navbar-order-btns"></button>
-            <button class="header__navbar-order-btns"></button>
+            <button class="header__navbar-order-btns modal__btn"></button>
           </div>
         </div>
       </div>
@@ -63,10 +84,15 @@
 
       <section class="hero">
         <div class="container">
-          
+          <div class="hero__inner">
+            <div class="hero__text">
+              <h2>Exclusive Deals of Furniture Collection</h2>
+              <p>Explore different categories. Find the best deals.</p>
+              <button>Shop Now</button>
+            </div>
+          </div>
         </div>
       </section>
-
       <section class="explore">
         <div class="container">
           <div class="explore__inner">
@@ -172,6 +198,97 @@
                   <button>Explore</button>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular-products">
+        <div class="container">
+          <h2 class="popular-products-title">Popular Products</h2>
+          <div class="popular-products__cards">
+            <div class="popular-products__cards-card">
+              <div class="popular-products__cards-card-block">
+                <img src="./image/popular-products/chair-1.png" alt="chair-1">
+                <div class="popular-products__cards-card-block-flex">
+                  <p class="popular-products__cards-card-block-flex-title">Armchair</p>
+                  <p class="popular-products__cards-card-block-flex-subtitle">Light single chair </p>
+                  <p class="popular-products__cards-card-block-flex-text">$145</p>
+                </div>
+              </div>
+            </div>
+            <div class="popular-products__cards-card">
+              <div class="popular-products__cards-card-block">
+                <img src="./image/popular-products/chair-3.png" alt="chair-3">
+                <div class="popular-products__cards-card-block-flex">
+                  <p class="popular-products__cards-card-block-flex-title">Minimal Sofa</p>
+                  <p class="popular-products__cards-card-block-flex-subtitle">Light single chair </p>
+                  <p class="popular-products__cards-card-block-flex-text">$145</p>
+                </div>
+              </div>
+            </div>
+            <div class="popular-products__cards-card">
+              <div class="popular-products__cards-card-block">
+                <img src="./image/popular-products/chair-4.png" alt="chair-3">
+                <div class="popular-products__cards-card-block-flex">
+                  <p class="popular-products__cards-card-block-flex-title">Dining Chair</p>
+                  <p class="popular-products__cards-card-block-flex-subtitle">Light single chair </p>
+                  <p class="popular-products__cards-card-block-flex-text">$145</p>
+                </div>
+              </div>
+            </div>
+            <div class="popular-products__cards-card">
+              <div class="popular-products__cards-card-block">
+                <img src="./image/popular-products/chair-4.png" alt="chair-3">
+                <div class="popular-products__cards-card-block-flex">
+                  <p class="popular-products__cards-card-block-flex-title">Dining Chair</p>
+                  <p class="popular-products__cards-card-block-flex-subtitle">Light single chair </p>
+                  <p class="popular-products__cards-card-block-flex-text">$145</p>
+                </div>
+              </div>
+            </div>
+            <div class="popular-products__cards-card">
+              <div class="popular-products__cards-card-block">
+                <img src="./image/popular-products/chair-4.png" alt="chair-3">
+                <div class="popular-products__cards-card-block-flex">
+                  <p class="popular-products__cards-card-block-flex-title">Dining Chair</p>
+                  <p class="popular-products__cards-card-block-flex-subtitle">Light single chair </p>
+                  <p class="popular-products__cards-card-block-flex-text">$145</p>
+                </div>
+              </div>
+            </div>
+            <div class="popular-products__cards-card">
+              <div class="popular-products__cards-card-block">
+                <img src="./image/popular-products/chair-4.png" alt="chair-3">
+                <div class="popular-products__cards-card-block-flex">
+                  <p class="popular-products__cards-card-block-flex-title">Dining Chair</p>
+                  <p class="popular-products__cards-card-block-flex-subtitle">Light single chair </p>
+                  <p class="popular-products__cards-card-block-flex-text">$145</p>
+                </div>
+              </div>
+            </div>
+            <div class="popular-products__cards-card">
+              <div class="popular-products__cards-card-block">
+                <img src="./image/popular-products/chair-4.png" alt="chair-3">
+                <div class="popular-products__cards-card-block-flex">
+                  <p class="popular-products__cards-card-block-flex-title">Dining Chair</p>
+                  <p class="popular-products__cards-card-block-flex-subtitle">Light single chair </p>
+                  <p class="popular-products__cards-card-block-flex-text">$145</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular-products">
+            <div class="popular-products__pagination">
+              <div class="popular-products__pagination-line">
+                <div class="popular-products__pagination-line-active">
+
+                </div>
+              </div>
+              <div class="popular-products__pagination-nav">
+                <button class="popular-products__pagination-nav-btn-left"></button>
+                <button class="popular-products__pagination-nav-btn-right"></button>
+              </div>
             </div>
           </div>
         </div>
@@ -385,6 +502,58 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimon">
+        <div class="container">
+          <h2 class="testimon__inner-title">Testimonials</h2>
+          <p class="testimon__inner-subtitle">Over 15,000 happy customers.</p>
+          <div class="testimon__inner">
+            <div class="testimon__inner-slider">
+              <div class="testimon__inner-slider-left">
+                <img src="./image/testimon/Image_container.png" alt="image">
+              </div>
+              <div class="testimon__inner-slider-right">
+                <div class="testimon__inner-slider-right-block">
+                  <p class="testimon__inner-slider-right-title">“My experience with Mark is a complete
+                    sucess, from customer service, wide range of
+                    products, clean store, purchasing experience, the
+                    newsletter.Thank you.”</p>
+                  <p class="testimon__inner-slider-right-subtitle">Leona Paul</p>
+                  <p class="testimon__inner-slider-right-text">CEO of Floatcom</p>
+                </div>
+                <div class="testimon__inner-slider-right-block">
+                  <p class="testimon__inner-slider-right-title">“My experience with Mark is a complete
+                    sucess, from customer service, wide range of
+                    products, clean store, purchasing experience, the
+                    newsletter.Thank you.”</p>
+                  <p class="testimon__inner-slider-right-subtitle">Leona Paul</p>
+                  <p class="testimon__inner-slider-right-text">CEO of Floatcom</p>
+                </div>
+                <div class="testimon__inner-slider-right-block">
+                  <p class="testimon__inner-slider-right-title">“My experience with Mark is a complete
+                    sucess, from customer service, wide range of
+                    products, clean store, purchasing experience, the
+                    newsletter.Thank you.”</p>
+                  <p class="testimon__inner-slider-right-subtitle">Leona Paul</p>
+                  <p class="testimon__inner-slider-right-text">CEO of Floatcom</p>
+                </div>
+              </div>
+              <div class="testimon__inner-slider-extra">
+                <div>
+                  <button class="testimon__inner-slider-extra-btns-1"></button>
+                  <button class="testimon__inner-slider-extra-btns-2"></button>
+                </div>
+              </div>
+            </div>
+            <div class="testimon__inner-slider-line">
+              <div class="testimon__inner-slider-line-block">
+                <div class="testimon__inner-slider-line-block-line"></div>
+              </div>
+              <p class="testimon__inner-slider-line-title">See all review</p>
+            </div>
           </div>
         </div>
       </section>

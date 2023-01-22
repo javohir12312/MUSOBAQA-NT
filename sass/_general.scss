@@ -19,6 +19,9 @@ body, .outer-wrapper {
   flex-direction: column;
 }
 
+.active{
+  overflow: hidden !important;
+}
 
 img {
   max-width: 100%;

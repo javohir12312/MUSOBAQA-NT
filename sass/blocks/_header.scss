@@ -1,11 +1,8 @@
 .header {
   width: 100%;
   position: absolute;
-<<<<<<< HEAD
   z-index: 12;
   background: rgba(0, 0, 0,0.2);
-=======
->>>>>>> f792b9a7de2dc5851de7c1d2443532b33731a746
   &__navbar {
     max-width: 1280px;
     width: 100%;
@@ -115,10 +112,7 @@
 @media (max-width: 1024px) {
   .header {
     width: 100%;
-<<<<<<< HEAD
     position: fixed;
-=======
->>>>>>> f792b9a7de2dc5851de7c1d2443532b33731a746
     &__navbar {
       max-width: 944px;
       width: 100%;
@@ -230,10 +224,7 @@
 @media (max-width: 576px) {
   .header {
     width: 100%;
-<<<<<<< HEAD
     position: fixed;
-=======
->>>>>>> f792b9a7de2dc5851de7c1d2443532b33731a746
     &__navbar {
       max-width: 944px;
       width: 100%;
