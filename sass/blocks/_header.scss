@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   &__navbar {
     max-width: 1280px;
     width: 100%;
@@ -110,8 +110,6 @@
 @media (max-width: 1024px) {
   .header {
     width: 100%;
-    position: fixed;
-    background: gray;
     &__navbar {
       max-width: 944px;
       width: 100%;
@@ -223,8 +221,6 @@
 @media (max-width: 576px) {
   .header {
     width: 100%;
-    position: fixed;
-    background: gray;
     &__navbar {
       max-width: 944px;
       width: 100%;

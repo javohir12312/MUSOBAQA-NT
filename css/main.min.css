@@ -408,7 +408,7 @@ img {
 
 .header {
   width: 100%;
-  position: fixed;
+  position: absolute;
 }
 .header__navbar {
   max-width: 1280px;
@@ -515,8 +515,6 @@ img {
 @media (max-width: 1024px) {
   .header {
     width: 100%;
-    position: fixed;
-    background: gray;
   }
   .header__navbar {
     max-width: 944px;
@@ -624,8 +622,6 @@ img {
 @media (max-width: 576px) {
   .header {
     width: 100%;
-    position: fixed;
-    background: gray;
   }
   .header__navbar {
     max-width: 944px;
@@ -958,7 +954,7 @@ img {
     flex-direction: column;
     row-gap: 20px;
     padding: 0;
-    margin-top: 200px;
+    margin-top: 110px;
   }
   .modal-menu__content-item-link {
     font-family: "Open Sans";
